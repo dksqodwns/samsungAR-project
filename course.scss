@@ -1,0 +1,67 @@
+.grid_container {
+  display: grid;
+  height: 1600px;
+  grid-template-rows: 7% 93%;
+  grid-template-columns: 8% 5% 82% 5%;
+  grid-template-areas:
+    "top top top top"
+    "side mid mid mid"
+    "side bot bot bot"
+    "side foot foot foot";
+}
+.grid_nav {
+  grid-area: top;
+  background-color: rgb(10, 63, 121);
+}
+
+.grid_nav p {
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 1.5%;
+}
+
+.grid_sidebar {
+  grid-area: side;
+  background-color: rgb(10, 63, 121);
+  height: 100%;
+}
+
+.ani_navbar {
+  width: 80px;
+  background-color: rgb(10, 63, 121);
+  color: white;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  z-index: 5;
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+.ani_navbar p {
+  margin-top: 30px;
+}
+
+.grid_main {
+  grid-area: mid;
+}
+
+.grid_main {
+  margin-left: 10%;
+  width: 80%;
+}
+.form_main {
+  border: 4px solid rgb(10, 63, 121);
+  border-radius: 10px;
+  background-color: #eee;
+}
+.form_main p {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 800;
+}
+.btn {
+  padding: 25px;
+}

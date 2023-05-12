@@ -1,0 +1,191 @@
+.grid_container {
+  display: grid;
+  height: 1600px;
+  grid-template-rows: 7% 30% 30% 30%;
+  grid-template-columns: 8% 31% 31% 31%;
+  grid-template-areas: "top top top top" "side mid mid mid" "side bot bot bot" "side foot foot foot";
+}
+
+.home-modal {
+  display: flex;
+  background-color: #eee;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  flex-direction: column;
+  border: 3px solid rgb(10, 63, 121);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.home-modal li {
+  padding: 15px;
+  margin: auto;
+}
+
+.home-modal ul {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.modal-title {
+  border: none;
+  font-size: 40px;
+  font-weight: 800;
+  border: 1px solid black;
+  background-color: rgb(10, 63, 121);
+  color: white;
+}
+
+.modal-close {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#close-btn {
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+}
+
+.close {
+  display: none;
+}
+
+.grid_nav {
+  grid-area: top;
+  background-color: rgb(10, 63, 121);
+}
+
+.grid_nav p {
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 1.5%;
+}
+
+.grid_sidebar {
+  grid-area: side;
+  background-color: rgb(10, 63, 121);
+  height: 140%;
+}
+
+.ani_navbar {
+  width: 80px;
+  background-color: rgb(10, 63, 121);
+  color: white;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  z-index: 5;
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.ani_navbar p {
+  margin-top: 30px;
+}
+
+.grid_main {
+  grid-area: mid;
+  background-image: url(background_image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-form {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  text-align: center;
+  border: none;
+  position: relative;
+  left: 70%;
+  top: 20%;
+  border-radius: 20px;
+}
+
+.text-field {
+  font-size: 14px;
+  padding: 15px;
+  border: none;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  width: 250px;
+  background-color: rgb(10, 63, 121);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.grid_bottom {
+  display: grid;
+  grid-area: bot;
+  width: 100%;
+  height: 100%;
+  min-height: 1200px;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas: "left main right";
+}
+
+.grid_left {
+  grid-area: left;
+}
+
+.grid_right {
+  grid-area: right;
+}
+
+.grid_bot {
+  grid-area: main;
+}
+
+.bot1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.schedule {
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 5px;
+  border: 6px solid rgb(10, 63, 121);
+  border-radius: 15px;
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.schedule:hover {
+  border: 6px solid orange;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.grid_foot {
+  grid-area: foot;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 15px;
+}/*# sourceMappingURL=index.css.map */
